@@ -10,8 +10,12 @@ def directors_totals(nds)
   result = {}
   i = 0
   while i < nds.length do
-    
+    director = nds[i]
+    # We want to provide the director name and their gross income, each on a new line
+    result[director[:name]] = gross_for_director(director_data)
+    i += 1
   end
+  result
 end
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
