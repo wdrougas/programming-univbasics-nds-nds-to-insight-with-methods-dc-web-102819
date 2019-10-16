@@ -27,4 +27,5 @@ def gross_for_director(director_data)
   total = 0
   while i < director_data.length do
     binding.pry
+  end
 end
